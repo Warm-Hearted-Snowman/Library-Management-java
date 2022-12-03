@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="/resources/css/dark-theme.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.userPage.UserPageController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="900.0">
+            <children>
+                <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="900.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="لیست">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#handleBookSearch" text="لیست کتاب ها" />
+                                <MenuItem mnemonicParsing="false" onAction="#handleIssuedList" text="لیست امانتی ها" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="بازگشت">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#handleExit" text="بستن" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <TableView fx:id="booksList" layoutY="31.0" prefHeight="570.0" prefWidth="598.0" styleClass="table_admin_edited">
+                    <columns>
+                        <TableColumn fx:id="showBookAvailability" maxWidth="125.0" minWidth="130.0" prefWidth="75.0" text="       وضعیت" />
+                        <TableColumn fx:id="showBookCategory" maxWidth="100.0" minWidth="110.0" prefWidth="75.0" text="   دسته بندی" />
+                        <TableColumn fx:id="showBookName" maxWidth="250.0" minWidth="250.0" prefWidth="75.0" text="                    نام کتاب" />
+                        <TableColumn fx:id="showBookId" maxWidth="100.0" minWidth="105.0" prefWidth="100.0" text="    شماره کتاب" />
+                    </columns>
+                </TableView>
+                <ImageView fx:id="adminIcon" fitHeight="100.0" fitWidth="100.0" layoutX="700.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/icons/userAvatar.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="674.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="54.0" prefWidth="170.0" text="خروج" />
+                <Button layoutX="674.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleIssuedList" prefHeight="54.0" prefWidth="170.0" text="امانت برده شده" />
+                <Button layoutX="674.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleBookSearch" prefHeight="54.0" prefWidth="170.0" text="جستجو کتاب" />
+                <Label layoutX="600.0" layoutY="160.0" prefHeight="20.0" prefWidth="300.0" style="-fx-font-size: 14px;-fx-alignment: center;" styleClass="secondary_color_edit" text="نام" />
+                <Label layoutX="600.0" layoutY="220.0" prefHeight="20.0" prefWidth="300.0" style="-fx-font-size: 14px;-fx-alignment: center;" styleClass="secondary_color_edit" text="شماره دانشجویی" />
+                <Label fx:id="showUserId" layoutX="600.0" layoutY="235.0" prefHeight="30.0" prefWidth="300.0" style="-fx-text-fill: #fff;-fx-underline: true" styleClass="tab-label-main-edited" />
+                <Label fx:id="showUserName" layoutX="600.0" layoutY="175.0" prefHeight="30.0" prefWidth="300.0" style="-fx-text-fill: #fff;-fx-underline: true" styleClass="tab-label-main-edited" />
+              <Line endX="880.0" layoutX="10.0" layoutY="32.0" styleClass="lineColor" />
+              <Line endX="280.0" layoutX="608.0" layoutY="290.0" styleClass="lineColor" />
+              <Line endX="550.0" layoutX="323.0" layoutY="315.0" rotate="90.0" styleClass="lineColor" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

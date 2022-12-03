@@ -1,0 +1,2 @@
+1- search in names if input was int
+2- write logs in file with correct name in a specific folder

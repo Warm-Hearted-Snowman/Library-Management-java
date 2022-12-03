@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="/resources/css/dark-theme.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.admin.adminController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="900.0">
+            <children>
+                <TableView fx:id="tableView" layoutY="291.0" prefHeight="310.0" prefWidth="598.0" styleClass="table_admin_edited">
+                    <columns>
+                        <TableColumn fx:id="issueDate" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="    تاریخ امانت" />
+                        <TableColumn fx:id="userName" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" styleClass="table-view-edited" text="    نام دانشجو" />
+                        <TableColumn fx:id="userId" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="  شماره دانشجو" />
+                        <TableColumn fx:id="bookName" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" styleClass="table-view-edited" text="       نام کتاب" />
+                        <TableColumn fx:id="bookId" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" styleClass="table-view-edited" text="    شماره کتاب" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <ImageView fx:id="adminIcon" fitHeight="100.0" fitWidth="100.0" layoutX="700.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../resources/icons/adminAvatar.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="664.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="54.0" prefWidth="170.0" text="خروج" />
+                <Button layoutX="664.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleIssuedList" prefHeight="54.0" prefWidth="170.0" text="امانت برده شده" />
+                <Button layoutX="664.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleBookList" prefHeight="54.0" prefWidth="170.0" text="لیست کتاب ها" />
+                <Label layoutX="730.0" layoutY="160.0" styleClass="tab-label-main" text="مدیر" />
+                <Label fx:id="date" layoutX="680.0" layoutY="200.0" prefHeight="30.0" prefWidth="120.0" style="-fx-font-size: 12px; -fx-text-fill: #fff; -fx-underline: true;-fx-alignment: center;" styleClass="tab-label-main" text="Date / Time" />
+                <Button layoutX="351.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleReturnBook" prefHeight="61.0" prefWidth="170.0" text="ثبت برگرداندن کتاب" />
+                <Button layoutX="69.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleIssueBook" prefHeight="62.0" prefWidth="170.0" text="ثبت امانت کتاب" />
+                <Button layoutX="69.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleAddBook" prefHeight="62.0" prefWidth="170.0" text="اضافه کردن کتاب" />
+                <Button layoutX="351.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleAddMember" prefHeight="62.0" prefWidth="170.0" text="اضافه کردن دانشجو" />
+                <Label fx:id="dayOfDate" layoutX="650.0" layoutY="223.0" prefHeight="30.0" prefWidth="120.0" style="-fx-font-size: 14px; -fx-text-fill: #fff;" styleClass="tab-label-main" text="Date / Time" />
+                <Line endX="880.0" layoutX="10.0" layoutY="32.0" styleClass="lineColor" />
+                <Line endX="280.0" layoutX="608.0" layoutY="291.0" styleClass="lineColor" />
+                <Line endX="550.0" layoutX="323.0" layoutY="315.0" rotate="90.0" styleClass="lineColor" />
+                <MenuBar prefHeight="25.0" prefWidth="900.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="مشاهده">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#handleBookList" text="لیست کتاب ها" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleMemberList" text="لیست افراد" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleIssuedList" text="لیست امانتی" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="افزودن">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#handleAddBook" text="افزودن کتاب" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleAddMember" text="افزودن دانشجو" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

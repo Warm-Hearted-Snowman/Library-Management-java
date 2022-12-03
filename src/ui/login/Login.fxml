@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="305" maxWidth="500" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="500.0" stylesheets="/resources/css/dark-theme.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.login.LoginController">
+   <AnchorPane maxHeight="305.0" maxWidth="500.0" minHeight="305.0" minWidth="500.0" prefHeight="305.0" prefWidth="500.0">
+      <Label layoutX="231.0" layoutY="7.0" styleClass="tab-label-main" text="ورود" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="myUserId" layoutX="20.0" layoutY="80.0" prefHeight="30.0" prefWidth="460.0" promptText="نام کاربری" styleClass="text_box_login"  />
+      <PasswordField fx:id="myPassword" layoutX="20.0" layoutY="160.0" prefHeight="30.0" prefWidth="460.0" promptText="رمز عبور" styleClass="text_box_login"  />
+      <Button fx:id="loginButton" layoutX="110.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="30.0" prefWidth="105.0" text="ورود" />
+      <Button layoutX="264.0" layoutY="231.0" mnemonicParsing="false" onAction="#exitLogin" prefHeight="30.0" prefWidth="105.0" text="لغو" />
+      <Label layoutX="423.0" layoutY="130.0" styleClass="tab-label-login" text="رمز ورود" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="50.0" styleClass="tab-label-login" text="نام کاربری" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+</StackPane>
