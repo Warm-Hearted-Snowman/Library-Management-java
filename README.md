@@ -1,6 +1,5 @@
 
 # Library Management
-## _ADVANCED PROGRAMMING JAVA CLASS_
 
 library management project is a java based project provided on java8 version, use javaFX library and styled by CSS language . This project use basic folding to make easier navigate between files and folders.
 
@@ -12,6 +11,7 @@ library management project is a java based project provided on java8 version, us
 - Search book and filter by book category and availability. 
 - Customized Farsi language user interface design.
 - Show Local date and time and use them for calculations
+- Detailed logging for more control on processes
 
 
 ### Default Login Credentials
@@ -34,30 +34,19 @@ On member page you can see all books sorted in a list and see their availability
 
 ## Screen shots
 <p align="center">
-  <img src=https://i.imgur.com/rH8NTlf.png>
-  <img src=https://i.imgur.com/6tDfor3.png>
-  <img src=https://i.imgur.com/JZQ5urx.png>
-  <img src=https://i.imgur.com/YAgA0sY.png>
-  <img src=https://i.imgur.com/saYZFeA.png>
-  <img src=https://i.imgur.com/Re1kYWq.png>
-  <img src=hhttps://i.imgur.com/sM6yOWA.png>
+  <img src=https://i.imgur.com/VTEiRO8.png>
+  <img src=https://i.imgur.com/ianTkjP.png>
+  <img src=https://i.imgur.com/rxve6sR.png>
+  <img src=https://i.imgur.com/6k9bU0P.png>
+  <img src=https://i.imgur.com/5btpcLX.png>
+  <img src=https://i.imgur.com/84V1h4h.png>
+  <img src=https://i.imgur.com/ahztdLU.png>
 </p>
 
 ## Developers
 Warm-Hearted-Snowman ( AmirHusein Hedayat Pour Toupkanlou ) :
   * [GitHub](https://github.com/Warm-Hearted-Snowman)
-  * [E-Mail](mailto:admin@cloudhadoop.com)
-* Student Number : 40019823
+  * [E-Mail](mailto:amirhtpt.a@gmail.com)
 
-
- Arian Homayouni :
- * [GitHub](https://github.com/ARIXhom)
- * [E-Mail](mailto:arianhomayooni81@gmail.com)
- * Student Number : 40019883
- 
- 
- Aida Mehrnia :
- * [GitHub](https://github.com/aidaaa-m)
- * [E-Mail](mailto:mehrniaaida@gmail.com)
- * Student Number : 40018323
-
+Dark_Knight :
+* [GitHub](https://github.com/dark6273)

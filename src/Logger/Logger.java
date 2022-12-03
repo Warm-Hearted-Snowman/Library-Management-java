@@ -54,6 +54,9 @@ public class Logger {
     public static void adminExitLogger() {
         log("Admin logged out Successfully.");
     }
+    public static void userExitLogger(String id) {
+        log("User : ( "+id+" ) logged out Successfully.");
+    }
     public static void programExitLogger() {
         log("Program stopped successfully.");
     }

@@ -13,6 +13,8 @@ import data.model.Book;
 import Logger.Logger;
 
 import database.dataHelper.showCurrentUser;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 import util.LibraryManagmentUtil;
 
 import java.io.BufferedReader;
@@ -31,11 +33,6 @@ public class UserPageController implements Initializable {
         LibraryManagmentUtil.loadWindow(getClass().getResource("/ui/userPageIssuedList/IssuedList.fxml"), "کتاب های امانتی", null);
     }
 
-    public void handleExit(ActionEvent e) {
-        Logger.adminExitLogger();
-        System.exit(0);
-    }
-
     ObservableList<Book> list = FXCollections.observableArrayList();
     @FXML
     public TableColumn<Book, String> showBookAvailability;
@@ -51,7 +48,16 @@ public class UserPageController implements Initializable {
     @FXML
     public Label showUserName;
     @FXML
+    public StackPane stackPane;
+    @FXML
     public TableView<Book> booksList;
+
+    public void handleExit(ActionEvent e) throws IOException {
+        showCurrentUser scu = new showCurrentUser();
+        Logger.userExitLogger(scu.getUserId());
+        LibraryManagmentUtil.loadWindow(getClass().getResource("/ui/login/login.fxml"), "صفحه ورود", null);
+        ((Stage) stackPane.getScene().getWindow()).close();
+    }
 
     private void setDatas() {
         new showCurrentUser(showUserId, showUserName);
