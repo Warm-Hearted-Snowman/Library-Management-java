@@ -38,9 +38,9 @@ On member page you can see all books sorted in a list and see their availability
   <img src=https://i.imgur.com/ianTkjP.png>
   <img src=https://i.imgur.com/rxve6sR.png>
   <img src=https://i.imgur.com/6k9bU0P.png>
-  <img src=https://i.imgur.com/5btpcLX.png>
-  <img src=https://i.imgur.com/84V1h4h.png>
-  <img src=https://i.imgur.com/ahztdLU.png>
+  <img src=https://i.imgur.com/qKOXwYO.png>
+  <img src=https://i.imgur.com/5VG85Um.png>
+  <img src=https://i.imgur.com/pblXVv9.png>
 </p>
 
 ## Developers
